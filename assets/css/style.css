@@ -1,0 +1,263 @@
+/* Styling the root element of the document with global fonts*/
+:root{
+    --light: #eeeee4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Sets the font and font colour for the whole document */
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Adds layout and styling to the body section*/
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: var(--light);
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Adds background colour, font styling and spacing*/
+.header {
+    background-color: #31343d;
+}
+
+/* Changes the header layout */
+.header div {
+    padding-top: 10px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+/* Display is set and header font size is set */
+.header h1 {
+    display: inline-block;
+    font-size: 30px;
+    background-color: #92cccd;
+    color: #31343d;
+    width: 220px;
+    text-align: right;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Adds the nav items styling and layout */
+.header div ul {
+    color: #92cccd;
+    list-style-type: none;
+  }
+
+ /* Changes the layout and adds a margin*/
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+
+/* Removes the bullet points and changes the font size*/
+  a {
+    color: #92cccd;
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/* Container holding the image and the text */
+.container_1 {
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0%;
+  float: right;
+  text-align: left;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+h2{
+  font-size: 20px;
+  color: #31343d;
+  background-color: #92cccd;
+  padding: 5px;
+}
+
+/* Adding colour and size to heading 3*/
+h3 {
+    color: #31343d;
+    font-size: 30px;
+    text-align: right;
+    margin: 0;
+ }
+
+.headline_1{
+    clear: both;
+    float: left;
+    width: 150px;
+    height: 150px;
+    text-align: right;
+    margin-top: 20px;
+    padding: 20px 20px 20px 0px;
+    border-right: solid 3px #31343d;
+}
+
+.main_1 {
+    float: left;
+    width: 90%;
+    min-height: 0px;
+    vertical-align: top;
+    text-align: justify;  
+    margin: 0%;
+    padding: 0px 10px 10px 10px;
+    overflow: hidden;
+}
+
+  .headline_2{
+    clear: both;
+    float: left;
+    width: 150px;
+    height: 150px;
+    text-align: right;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+    border-right: solid 3px #31343d;
+}
+
+  .main_2 {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 0px;
+    vertical-align: top;
+    text-align: justify;  
+    margin: 0%;
+    padding: 0px 10px 10px 10px;
+    overflow: hidden;
+}
+
+  .headline_3{
+    clear: both;
+    float: left;
+    width: 150px;
+    height: 150px;
+    text-align: right;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+    border-right: solid 3px #31343d;
+}
+
+  .main_3 {
+    float: left;
+    display: inline;
+    width: 300px;
+    margin-top: 20px;
+    border: 1px turquoise;
+    padding: 10px;
+    color: #31343d;;
+}
+
+ .main_3 a{
+    color: #31343d;
+ }
+
+  .project{
+    flex: 1;
+    padding: 20px 20px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex: 0 0 400px;
+  }
+
+  .project-title{
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    float: left;
+    text-align: left;
+  }
+
+  /* Bottom right text */
+.bottom-left {
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+    background-color: #92cccd;
+    color: #31343d;
+    margin: 0;
+  }
+
+  h4 {
+    color: #31343d;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+ }
+
+ h5 {
+    color: #31343d;
+    font-size: 15px;
+    text-align: left;
+    margin: 0; 
+    padding: 0px 10px 0px 10px;
+ }
+
+ .project img{
+    border: #92cccd 5px solid;
+    max-width: 850px;
+    margin: 0px;
+ }
+
+ .main-image{
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex: 1 0 100%;
+ }
+
+
+/* Hides the footer section*/
+  footer{
+      display: none;
+  }
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+
+
