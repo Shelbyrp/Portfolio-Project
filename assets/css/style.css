@@ -1,13 +1,14 @@
-/* Styling the root element of the document with global fonts*/
+/* Styling the root element of the document with global fonts, including colours*/
 :root{
     --light: #eeeee4;
+    --dark:#31343d;
+    --blue: #92cccd;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Sets the font and font colour for the whole document */
+/* Sets the border box to allow padding and border to an elements total width and height*/
 * {
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Adds layout and styling to the body section*/
@@ -18,11 +19,11 @@ body {
     background-color: var(--light);
     padding: 0;
     margin: 0;
-  }
+}
 
-  /* Adds background colour, font styling and spacing*/
+/* Adds background colour to the header*/
 .header {
-    background-color: #31343d;
+    background-color: var(--dark);
 }
 
 /* Changes the header layout */
@@ -33,45 +34,47 @@ body {
     font-size: 20px;
 }
 
-/* Display is set and header font size is set */
+/* Display for heading 1 and font size is set */
 .header h1 {
     display: inline-block;
     font-size: 30px;
-    background-color: #92cccd;
-    color: #31343d;
+    background-color: var(--blue);
+    color: var(--dark);
     width: 250px;
     text-align: center;
     padding: 5px 10px 5px 15px;
 }
 
+/* Layout for nav is changed*/
 nav {
     display: flex;
     justify-content: flex-end;
 }
 
-/* Adds the nav items styling and layout */
+/* Adds the nav items styling */
 .header div ul {
-    color: #92cccd;
+    color: var(--blue);
     list-style-type: none;
-  }
+}
 
- /* Changes the layout and adds a margin*/
+/* Changes the layout and adds a margin*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
-  }
+}
 
-/* Removes the bullet points and changes the font size*/
+/* Changes the font size and colour*/
   a {
-    color: #92cccd;
+    color: var(--blue);
     font-size: 20px;
     text-align: center;
 }
 
+/* Creates the main as a flex container*/
 main {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
 /* Container holding the image and the text */
 .container_1 {
@@ -84,28 +87,30 @@ main {
   text-align: left;
 }
 
-/* Bottom right text */
+/* Bottom right text of subtitle */
 .bottom-right {
   position: absolute;
   right: 5%;
   bottom: 5%;
 }
 
-h2{
+/* Sets the font size, colour and background colour */
+ h2{
   font-size: 20px;
-  color: #31343d;
-  background-color: #92cccd;
+  color: var(--dark);
+  background-color: var(--blue);
   padding: 5px;
 }
 
 /* Adding colour and size to heading 3*/
 h3 {
-    color: #31343d;
+    color: var(--dark);
     font-size: 30px;
     text-align: right;
     margin: 0;
- }
+}
 
+/* Sets the format of the about me heading*/
 .headline_1{
     clear: both;
     float: left;
@@ -114,10 +119,11 @@ h3 {
     text-align: right;
     margin-top: 20px;
     padding: 20px 20px 20px 0px;
-    border-right: solid 3px #31343d;
+    border-right: solid 3px var(--dark);
 }
 
-.main_1 {
+/* Creates the styling of the about main text*/
+ .main_1 {
     float: left;
     width: 70%;
     min-height: 0px;
@@ -127,6 +133,7 @@ h3 {
     padding: 0px 10px 10px 10px;
 }
 
+/* Creates the area for the profile photo*/
 .right_1 {
     float: left;
     width: 20%;
@@ -137,7 +144,8 @@ h3 {
     justify-content: right;
 }
 
-  .headline_2{
+/* Sets the format of the work heading*/
+.headline_2{
     clear: both;
     float: left;
     width: 150px;
@@ -145,11 +153,11 @@ h3 {
     text-align: right;
     margin: 0;
     padding: 20px 20px 20px 0px;
-    border-right: solid 3px #31343d;
+    border-right: solid 3px var(--dark);
 }
 
-
-  .main_2 {
+/* Creates the styling of the about main text*/
+.main_2 {
     float: left;
     width: 90%;
     min-height: 0px;
@@ -160,7 +168,8 @@ h3 {
     overflow: hidden;
 }
 
-  .headline_3{
+/* Add styling and layout to the contact heading*/
+.headline_3{
     clear: both;
     float: left;
     width: 150px;
@@ -168,33 +177,37 @@ h3 {
     text-align: right;
     margin: 0;
     padding: 20px 20px 20px 0px;
-    border-right: solid 3px #31343d;
+    border-right: solid 3px var(--dark);
 }
 
-  .main_3 {
+/* Add styling and layout to the contact details*/
+.main_3 {
     float: left;
     display: inline;
     width: 300px;
     margin-top: 20px;
     border: 1px turquoise;
     padding: 10px;
-    color: #31343d;;
+    color: var(--dark);
 }
 
- .main_3 a{
-    color: #31343d;
- }
+/* Adds the dark blue colour to the fonts*/
+.main_3 a{
+    color: var(--dark);
+}
 
-  .project{
+/* Styles the project examples*/
+.project{
     flex: 1;
     padding: 20px 20px 20px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex: 1 2 600px;
-  }
+}
 
-  .project-title{
+/* Adds styling tp the project image titles*/
+.project-title{
     display: block;
     position: relative;
     width: auto;
@@ -202,34 +215,37 @@ h3 {
     margin: 0;
     float: left;
     text-align: left;
-  }
+}
 
-  /* Bottom right text */
+/* Bottom right text */
 .bottom-left {
     position: absolute;
     left: 0%;
     bottom: 10%;
-    background-color: #92cccd;
-    color: #31343d;
+    background-color: var(--blue);
+    color: var(--dark);
     margin: 0;
-  }
+}
 
-  h4 {
-    color: #31343d;
+/* Adds styling and colour to the font for H4*/
+h4 {
+    color: var(--dark);
     font-size: 20px;
     text-align: left;
     margin: 0;
     padding: 0px 10px 0px 10px;
- }
+}
 
+/* Adds styling and colour to the font for H5*/
  h5 {
-    color: #31343d;
+    color: var(--dark);
     font-size: 15px;
     text-align: left;
     margin: 0; 
     padding: 0px 10px 0px 10px;
- }
+}
 
+/* Adds a border and width of the project images*/
  .project img{
     border: #92cccd 5px solid;
     width: 100%;
@@ -237,27 +253,28 @@ h3 {
     opacity: 0.8;
     transition: 0.3s;
     flex: 1 1 100%;
- }
+}
 
+/* Creates the hover over the project images*/
  .project img:hover{
      opacity: 1
-    }
+}
 
+/* Adds flex styling to the project one image*/
  .main-image{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     flex: 1 1 100%;
- }
-
+}
 
 /* Hides the footer section*/
   footer{
       display: none;
-  }
+}
 
-  @media only screen and (max-width:800px) {
+@media only screen and (max-width:800px) {
     /* For tablets: */
     .main_1 {
       width: 80%;
