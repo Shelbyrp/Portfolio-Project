@@ -39,9 +39,9 @@ body {
     font-size: 30px;
     background-color: #92cccd;
     color: #31343d;
-    width: 220px;
-    text-align: right;
-    padding: 5px;
+    width: 250px;
+    text-align: center;
+    padding: 5px 10px 5px 15px;
 }
 
 nav {
@@ -119,13 +119,22 @@ h3 {
 
 .main_1 {
     float: left;
-    width: 90%;
+    width: 70%;
     min-height: 0px;
     vertical-align: top;
     text-align: justify;  
     margin: 0%;
     padding: 0px 10px 10px 10px;
-    overflow: hidden;
+}
+
+.right_1 {
+    float: left;
+    width: 20%;
+    min-height: 100px;
+    text-align: right;  
+    margin: 0%;
+    padding: 20px 20px 10px 10px;
+    justify-content: right;
 }
 
   .headline_2{
@@ -139,11 +148,9 @@ h3 {
     border-right: solid 3px #31343d;
 }
 
+
   .main_2 {
     float: left;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 90%;
     min-height: 0px;
     vertical-align: top;
@@ -183,8 +190,8 @@ h3 {
     padding: 20px 20px 20px 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    flex: 0 0 400px;
+    justify-content: center;
+    flex: 1 2 600px;
   }
 
   .project-title{
@@ -225,16 +232,23 @@ h3 {
 
  .project img{
     border: #92cccd 5px solid;
-    max-width: 850px;
+    width: 100%;
     margin: 0px;
+    opacity: 0.8;
+    transition: 0.3s;
+    flex: 1 1 100%;
  }
 
+ .project img:hover{
+     opacity: 1
+    }
+
  .main-image{
-    width: 1500px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    flex: 1 0 100%;
+    flex: 1 1 100%;
  }
 
 
@@ -245,19 +259,31 @@ h3 {
 
   @media only screen and (max-width:800px) {
     /* For tablets: */
-    .main {
+    .main_1 {
       width: 80%;
       padding: 0;
     }
-    .right {
+    .right_1 {
       width: 100%;
     }
+    .main_2 {
+        width: 80%;
+        padding-right: 0;
+      }
+      .right_2 {
+        width: 100%;
+      }
   }
+
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
-    .menu, .main, .right {
+    .headline_1, .main_1, .right_1 {
       width: 100%;
     }
+    .headline_2, .main_2{
+        width: 100%;
+        padding-right: 20px;
   }
+}
 
 
