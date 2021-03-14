@@ -14,7 +14,7 @@ Any employer is able to view projects that I have worked on or created and succe
 
 # CSS Process
 
-Overall the styling apply allow for a reponsive web application to showcase skills and experience.
+Overall the styling applied allows for a reponsive web application to showcase skills and experience.
 
 Header
 
