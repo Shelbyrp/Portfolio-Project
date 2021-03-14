@@ -1,6 +1,6 @@
 # 02 Advanced CSS: Portfolio-Project
 
-## This portfolio is showcases web applications created by Shelby Pignat, a Full Stack Web Developer.
+## This portfolio showcases web applications created by Shelby Pignat, a Full Stack Web Developer.
 
 Any employer is able to view projects that I have worked on or created and successfully view deployed projects. Each of the project examples in this portfolio links to a live application.
 
@@ -8,7 +8,7 @@ Any employer is able to view projects that I have worked on or created and succe
 
 1. Created the HTML structure of the page
 2. Used semantic elements in the structure
-3. Added indentions
+3. Added indentions for readability
 4. CSS selectors added
 5. Meta information is included
 
