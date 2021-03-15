@@ -290,6 +290,9 @@ h4 {
       .right_2 {
         width: 100%;
       }
+      .project img:hover{
+        opacity: 1
+     }
   }
 
   @media only screen and (max-width:500px) {
@@ -300,6 +303,9 @@ h4 {
     .headline_2, .main_2{
         width: 100%;
         padding-right: 20px;
+   }
+   .project img:hover{
+     opacity: 1
   }
 }
 
