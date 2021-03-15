@@ -125,12 +125,16 @@ h3 {
 /* Creates the styling of the about main text*/
  .main_1 {
     float: left;
-    width: 70%;
+    width: 60%;
     min-height: 0px;
     vertical-align: top;
     text-align: justify;  
     margin: 0%;
     padding: 0px 10px 10px 10px;
+}
+
+.main_1 p{
+    padding-left: 3px;
 }
 
 /* Creates the area for the profile photo*/
@@ -140,7 +144,7 @@ h3 {
     min-height: 100px;
     text-align: right;  
     margin: 0%;
-    padding: 20px 20px 10px 10px;
+    padding: 10px 10px 10px 10px;
     justify-content: right;
 }
 
@@ -274,10 +278,10 @@ h4 {
       display: none;
 }
 
-@media only screen and (max-width:800px) {
+ @media only screen and (max-width:800px) {
     /* For tablets: */
     .main_1 {
-      width: 80%;
+      width: 70%;
       padding: 0;
     }
     .right_1 {
@@ -295,7 +299,7 @@ h4 {
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
     .headline_1, .main_1, .right_1 {
-      width: 100%;
+      width: 80%;
     }
     .headline_2, .main_2{
         width: 100%;
