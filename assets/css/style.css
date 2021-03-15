@@ -1,6 +1,6 @@
 /* Styling the root element of the document with global fonts, including colours*/
 :root{
-    --light: #eeeee4;
+    --light: #ffffff;
     --dark:#31343d;
     --blue: #92cccd;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -75,6 +75,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 /* Container holding the image and the text */
 .container_1 {
@@ -290,9 +291,6 @@ h4 {
       .right_2 {
         width: 100%;
       }
-      .project img:hover{
-        opacity: 1
-     }
   }
 
   @media only screen and (max-width:500px) {
